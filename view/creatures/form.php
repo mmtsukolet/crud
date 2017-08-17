@@ -15,10 +15,10 @@
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" value="<?php echo htmlentities($name) ?>" id="catName" name="name" placeholder="name category">
+        <input type="hidden" name="form-submitted" value="1" />
+        <input type="hidden" name="id" value="<?php echo htmlentities($id) ?>" />
+        <input type="submit" class="btn btn-default" value="Submit" />
       </div>
-      <input type="hidden" name="form-submitted" value="1" />
-      <input type="hidden" name="id" value="<?php echo htmlentities($id) ?>" />
-      <button type="submit" class="btn btn-default">Submit</button>
     </form>
 
 </div>

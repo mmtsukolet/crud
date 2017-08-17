@@ -13,7 +13,7 @@
               <th></th>
             </tr>
           </thead>
-          <a class="btn btn-primary" href="<?php echo $base_url_index ?>&r=creatures&op=create">create</a>
+          <a class="button" href="<?php echo $base_url_index ?>&r=creatures&op=create">CREATE</a>
           <tbody>
             <?php foreach ($creatures as $m): ?>
             <tr>

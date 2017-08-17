@@ -50,7 +50,7 @@
         {
             $title = 'Add new Category';
             $name = '';
-            $errors = [];
+            $errors = array();
             
             if ( isset($_POST['form-submitted']) ) {
                 
@@ -74,7 +74,7 @@
             $title = 'Update Creatures';
             $name = '';
             $id = isset($_GET['id']) ? $_GET['id']  :NULL;;
-            $errors = [];
+            $errors = array();
 
             if (!$id)
               throw new Exception('Internal error.');
