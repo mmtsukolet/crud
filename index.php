@@ -1,6 +1,7 @@
 <?php
 
     require_once 'controller/CreaturesController.php';
+    require_once 'controller/LoginController.php';
 
     $operation = isset($_GET['r']) ? $_GET['r'] : NULL;
 
@@ -9,7 +10,7 @@
         // Hook in here the password matching
         
         if (!$operation) {
-            $controller = new CreaturesController;
+            $controller = new LoginController;
             $controller->handleRequest();
         } else {
             if (file_exists(__DIR__ . '/controller/' . ucfirst($operation) . 'Controller.php')) {
